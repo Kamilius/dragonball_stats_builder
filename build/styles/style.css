@@ -1,0 +1,95 @@
+/*! "Dragon ball" 2015-03-21 */
+/* line 1, ../../src/content/styles/styles.sass */
+.page-container {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* line 6, ../../src/content/styles/styles.sass */
+hr {
+  max-width: 100%;
+}
+
+/* line 9, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper {
+  position: relative;
+  float: right;
+  display: inline-block;
+}
+/* line 13, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper #attributes {
+  margin: 25px 20px;
+}
+/* line 15, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label {
+  position: absolute;
+}
+/* line 17, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.health {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* line 21, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.ki {
+  top: 25%;
+  right: 10px;
+  transform: translate(0, -25%);
+}
+/* line 25, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.stamina {
+  top: 75%;
+  right: 0px;
+  transform: translate(0, -75%);
+}
+/* line 29, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.attack {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* line 33, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.blast {
+  top: 75%;
+  left: 0px;
+  transform: translate(0, -75%);
+}
+/* line 37, ../../src/content/styles/styles.sass */
+.stats-graph-wrapper .stat-label.strike {
+  top: 25%;
+  left: 0;
+  transform: translate(0, -25%);
+}
+
+/* line 42, ../../src/content/styles/styles.sass */
+.attributes-wrapper {
+  max-width: 50%;
+}
+
+/* line 45, ../../src/content/styles/styles.sass */
+#attributes-list {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+}
+/* line 50, ../../src/content/styles/styles.sass */
+#attributes-list li {
+  margin-top: 5px;
+}
+
+/* line 54, ../../src/content/styles/styles.sass */
+#attributes-list label, .select-wrapper label {
+  display: inline-block;
+  width: 103px;
+  text-align: right;
+}
+
+/* line 58, ../../src/content/styles/styles.sass */
+.attributes-to-spend {
+  padding-left: 2px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */

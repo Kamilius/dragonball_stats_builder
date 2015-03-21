@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Dragon ball Xenoverse - Stats builder</title>
+    <link href='style.css'>
+  </head>
+  <body>
+    <div class='page-container'>
+      <div class='stats-graph-wrapper'>
+        <canvas height='250' id='attributes' width='250'></canvas>
+        <div class='stat-label health'>HEA</div>
+        <div class='stat-label ki'>KI</div>
+        <div class='stat-label stamina'>STM</div>
+        <div class='stat-label attack'>ATK</div>
+        <div class='stat-label strike'>STR</div>
+        <div class='stat-label blast'>BLA</div>
+      </div>
+      <div class='attributes-wrapper'>
+        <div class='select-wrapper'>
+          <label>Race:</label>
+          <select class='race-select'>
+            <option value='majin'>Majin</option>
+            <option value='saiyan'>Saiyan</option>
+            <option value='earthling'>Earthling</option>
+            <option value='namekian'>Namekian</option>
+            <option value='frieza'>Frieza</option>
+          </select>
+        </div>
+        <div class='select-wrapper'>
+          <label>Gender:</label>
+          <select class='gender-select'>
+            <option value='male'>Male</option>
+            <option value='female'>Female</option>
+          </select>
+        </div>
+        <div class='select-wrapper'>
+          <label>Level:</label>
+          <input class='level-input' max='80' min='1' step='1' type='number' value='1'>
+        </div>
+        <ul id='attributes-list'>
+          <li>
+            <label class='attribute-label'>Health:</label>
+            <input class='attribute-item' data-attribute='hea' min='0' step='1' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Ki:</label>
+            <input class='attribute-item' data-attribute='ki' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Stamina:</label>
+            <input class='attribute-item' data-attribute='stm' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Physical attack:</label>
+            <input class='attribute-item' data-attribute='atk' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Strike supers:</label>
+            <input class='attribute-item' data-attribute='str' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Ki Blast supers:</label>
+            <input class='attribute-item' data-attribute='bla' type='number' value='0'>
+          </li>
+          <li>
+            <label class='attribute-label'>Points to spend:</label>
+            <span class='points-to-spend'>0</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src='main.min.js'></script>
+  </body>
+</html>

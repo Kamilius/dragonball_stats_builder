@@ -1,0 +1,56 @@
+%html
+  %head
+    %title Dragon ball Xenoverse - Stats builder
+    %link{:href => "style.css"}
+  %body
+    .page-container
+      .stats-graph-wrapper
+        %canvas#attributes{:width => "250", :height => "250"}
+        .stat-label.health HEA
+        .stat-label.ki KI
+        .stat-label.stamina STM
+        .stat-label.attack ATK
+        .stat-label.strike STR
+        .stat-label.blast BLA
+
+      .attributes-wrapper
+        .select-wrapper
+          %label Race:
+          %select.race-select
+            %option{:value => "majin"} Majin
+            %option{:value => "saiyan"} Saiyan
+            %option{:value => "earthling"} Earthling
+            %option{:value => "namekian"} Namekian
+            %option{:value => "frieza"} Frieza
+        .select-wrapper
+          %label Gender:
+          %select.gender-select
+            %option{:value => "male"} Male
+            %option{:value => "female"} Female
+        .select-wrapper
+          %label Level:
+          %input.level-input{:type => 'number', :step => '1', :min => '1', :max => '80', :value => 1}
+
+        %ul#attributes-list
+          %li
+            %label.attribute-label Health:
+            %input.attribute-item{:type => 'number', :step => '1', :min => '0', :value => 0, :'data-attribute' => 'hea'}
+          %li
+            %label.attribute-label Ki:
+            %input.attribute-item{:type => 'number', :value => 0, :'data-attribute' => 'ki'}
+          %li
+            %label.attribute-label Stamina:
+            %input.attribute-item{:type => 'number', :value => 0, :'data-attribute' => 'stm'}
+          %li
+            %label.attribute-label Physical attack:
+            %input.attribute-item{:type => 'number', :value => 0, :'data-attribute' => 'atk'}
+          %li
+            %label.attribute-label Strike supers:
+            %input.attribute-item{:type => 'number', :value => 0, :'data-attribute' => 'str'}
+          %li
+            %label.attribute-label Ki Blast supers:
+            %input.attribute-item{:type => 'number', :value => 0, :'data-attribute' => 'bla'}
+          %li
+            %label.attribute-label Points to spend:
+            %span.points-to-spend 0
+    %script{:src => "main.min.js"}

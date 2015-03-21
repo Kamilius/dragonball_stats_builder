@@ -1,0 +1,60 @@
+.page-container
+  position: relative
+  max-width: 1024px
+  margin: 0 auto
+
+hr
+  max-width: 100%
+
+.stats-graph-wrapper
+  position: relative
+  float: right
+  display: inline-block
+  #attributes
+    margin: 25px 20px
+  .stat-label
+    position: absolute
+    &.health
+      top: 0
+      left: 50%
+      transform: translate(-50%, 0)
+    &.ki
+      top: 25%
+      right: 10px
+      transform: translate(0, -25%)
+    &.stamina
+      top: 75%
+      right: 0px
+      transform: translate(0, -75%)
+    &.attack
+      bottom: 0
+      left: 50%
+      transform: translate(-50%, 0)
+    &.blast
+      top: 75%
+      left: 0px
+      transform: translate(0, -75%)
+    &.strike
+      top: 25%
+      left: 0
+      transform: translate(0, -25%)
+
+.attributes-wrapper
+  max-width: 50%
+
+#attributes-list
+  position: relative
+  display: inline-block
+  padding: 0
+  list-style: none
+  li
+    margin-top: 5px
+
+#attributes-list, .select-wrapper
+  label
+    display: inline-block
+    width: 103px
+    text-align: right
+.attributes-to-spend
+  padding-left: 2px
+  text-align: left
